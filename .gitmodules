@@ -1,0 +1,3 @@
+[submodule "flutter-webrtc"]
+	path = flutter-webrtc
+	url = git@github.com:Perondas/flutter-webrtc.git
