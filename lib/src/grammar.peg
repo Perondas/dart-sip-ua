@@ -844,7 +844,8 @@ CSeq_method   <- Method
 
 ## EXPIRES
 
-Expires     <- expires: delta_seconds {data = expires; }
+Expires     <- expires: delta_seconds {if(data.params == null) data.params = {};
+                data = expires; }
 
 Event             <- event: event_type ( SEMI event_param )* {
                     data.event = event;
@@ -883,7 +884,8 @@ Max_Forwards  <- forwards: DIGIT+ {
 
 ## MIN-EXPIRES
 
-Min_Expires  <- min_expires: delta_seconds {data = min_expires; }
+Min_Expires  <- min_expires: delta_seconds {if(data.params == null) data.params = {};
+                data = min_expires; }
 
 ## Name_Addr
 
