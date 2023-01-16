@@ -1,0 +1,6 @@
+[submodule "dart-sip-ua"]
+	path = dart-sip-ua
+	url = git@github.com:Perondas/dart-sip-ua.git
+[submodule "flutter-webrtc"]
+	path = flutter-webrtc
+	url = git@github.com:Perondas/flutter-webrtc.git
